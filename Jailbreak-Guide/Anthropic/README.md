@@ -23,23 +23,22 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 **Extended Thinking (ET)** mode available — stronger outputs, especially with Opus/Sonnet at conversation start.
 
-### Sonnet 4.6 Highlights
-- **SWE-bench Verified:** 79.6% (barely trails Opus 4.6 at 80.9%)
-- **OSWorld:** 72.5% — at a price point 5x cheaper than Opus 4.6
-- **Computer use accuracy:** 94% on insurance benchmarks
-- Users preferred Sonnet 4.6 over Sonnet 4.5 **70% of the time** in Claude Code testing
-- Users even preferred Sonnet 4.6 over **Opus 4.5** 59% of the time
-- Less overengineering, fewer hallucinations, fewer false claims, better multi-step follow-through
-- Major improvement in prompt injection resistance vs Sonnet 4.5
-- **Default model** for Free and Pro plan users on Claude.ai
+### Fable 5 (Mythos) Highlights
+- **Model Class:** Mythos-class (tier ABOVE Opus)
+- **SWE-Bench Pro:** 80.3% (vs Opus 4.8's 69.2%)
+- **SWE-Bench Verified:** 95.0%
+- **Every Senior Engineer:** 91/100
+- **OSWorld-Verified:** 85.0%
+- **Writing Quality:** Par none, incredible for long-form content and RP.
+- **Context Window:** 1,000,000 tokens (1M) default
+- **API Pricing:** $10/M input, $50/M output (2x Opus 4.8)
 
-### Opus 4.6 Highlights
-- **Task horizon:** 14h 30m (50th percentile), 1h 3m (80th percentile) — longest of any model as estimated by METR
-- Agent team support and multi-agent coordination
-- **1M token context window** now available in beta
-- More safety-aligned than 4.5 — have to be slightly better with prompting
-- Same price as Opus 4.5 with a significant capability jump
-- **ask_user** tool — useful for jailbreaking, makes getting requests through easier
+### Opus 4.8 Highlights
+- **Context Window:** 1,000,000 tokens default (200k on Microsoft Foundry)
+- **Mid-Conversation System Messages:** Can dynamically append updated instructions later in long conversations without restating the full system prompt.
+- **Effort Parameter:** Defaults to "high" for max reasoning capability.
+- **Refusal Stop Details:** Returns specific failure categories for fine-tuning jailbreak approaches.
+- Highly susceptible to argument-based framing and social engineering.
 
 ---
 
@@ -47,10 +46,11 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 | Tier | Cost | Notes |
 |------|------|-------|
-| Free | $0 | Sonnet 4.6 (limited messages) |
-| Pro | $20/month | Full Sonnet 4.6, Opus 4.6, ET mode, higher limits |
-| Max | $100/month | Higher rate limits, Opus priority |
-| API | Pay-per-token | Full model access, 1M context beta available |
+| Free | $0 | Limited messages |
+| Pro | $20/month | Full access, ET mode, higher limits |
+| Max | $100/month | Higher rate limits, priority access |
+| Team | Variable | Includes Fable 5 free access window through June 22, 2026 |
+| API | Pay-per-token | Full model access, 1M context available by default |
 
 ---
 
